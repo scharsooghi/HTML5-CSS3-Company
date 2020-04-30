@@ -1,0 +1,245 @@
+/* General Styles */
+
+body,
+p,
+h1,
+h2,
+h3,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.clear {
+    clear: both;
+}
+
+
+.container {
+    width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* Navigation Styles */
+
+
+#nav {
+    background: #37474f;
+}
+
+#nav h2 {
+    padding: 20px 0px;
+    color: #fff;
+    float: left;
+}
+
+#nav h2 span {
+    color: #C2185B;
+}
+
+#nav ul {
+    float: right;
+    padding-top: 15px;
+}
+
+
+#nav ul li {
+    display: inline-block;
+    padding: 10px 2px;
+}
+
+#nav ul li a {
+    color: #fff;
+    padding: 3px 5px;
+}
+
+#nav ul li a:hover {
+    background: #C2185B;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* Home Styles */
+
+#home {
+    background: url(../images/testla-stor.png) no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+#home h1 {
+    font-size: 50px;
+    padding-top: 20px;
+    color: #fff;
+    text-shadow: 7px 5px 4px rgba(0, 0, 0, 0.65);
+}
+
+#home h2 {
+    font-size: 25px;
+    color: #d91b66;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.95);
+}
+
+#home p {
+	margin-top: 15px;
+    font-size: 15px;
+    height: 20px;
+    color: #fff;
+    text-shadow: 7px 5px 4px rgba(0, 0, 0, 0.65);
+}
+
+
+/* Newsletter Styles */
+
+#newsletter {
+    background: #37474f;
+    color: #fff;
+    padding: 20px 0;
+}
+
+#newsletter h3 {
+	float: left;
+	font-size: 17px;
+}
+
+#newsletter form {
+	float: right;
+}
+
+
+#newsletter form input[type=text] {
+	padding: 5px ;
+	border: none;
+	
+}
+
+#newsletter form input[type=submit] {
+	padding: 5px ;
+	background-color: green;
+	color: #fff;
+	border: none;
+}
+
+#newsletter form input[type=submit]:hover {
+	background-color: #006700;
+	cursor: pointer;
+}
+
+
+/* Services Styles */
+
+#services {
+	margin: 30px 0;
+}
+
+#services .section{
+display: inline-block;
+  width: 33%;
+  text-align: center;
+  cursor: pointer;
+}
+
+#services img {
+	width: 200px;
+	opacity: 0.8;	
+}
+
+#services .section:hover img {
+	opacity: 1;
+}
+
+#services .serv-title {
+	padding-top: 10px;
+	font-size: 25px;
+
+}
+
+#services .serv-desc {
+	margin-top: 5px;
+	color: gray;
+	font-size: 15px;
+}
+
+
+/* About-Us Styles */
+
+#about-us {
+	background: #e2e2e2;
+}
+
+#about-us .us-text {
+	float: left;
+	width: 50%;
+	text-align: left;
+	padding: 10px 0;
+}
+
+#about-us img {
+	width: 600px;
+	float: right;
+	width: 50%;
+}
+
+#about-us .us-title {
+	padding: 20px 0px 0px 10px;
+	font-size: 30px;
+}
+
+#about-us .us-desc {
+	padding: 10px ;
+	line-height: 25px;
+}
+
+
+/* Vehicles Styles */
+
+#vehicles {
+	padding: 10px 0;
+}
+
+#vehicles h3 {
+	margin-bottom: 30px;
+	font-size: 30px;
+	text-align: center;
+}
+
+#vehicles .vehicle-container {
+    width: 900px;
+    margin: auto;  
+}
+
+#vehicles img {
+	width: 200px;
+	height: 200px;
+	opacity: 0.9;
+	border-radius: 50%;
+}
+
+#vehicles img:hover {
+	opacity: 1;
+}
+
+
+
+/* Footer Styles */
+#footer {
+ background: #3f3f3f;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+  margin-top: 40px;
+  font-size: 13px;
+
+}
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicle Company</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
+    <script src="js/typed.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="nav">
+        <div class="container">
+            <h2><span>E</span>vlin <span>V</span>ehicle <span>C</span>ompany</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Vehicles</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </nav>
+    <!-- Home -->
+    <section id="home">
+        <div class="container">
+            <h1 class="title">Evlin Vehicle Company</h1>
+            <h2 class="subtitle">The best <span class="js-subtitle"></span></h2>
+            <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </section>
+    <!-- Newsletter -->
+    <section id="newsletter">
+        <div class="container">
+            <h3 class="membership">If you want to stay updated on the latest news fill the form</h3>
+            <form action="">
+                <input type="text" placeholder="Your Email..." onfocus="this.placeholder=''" onblur="this.placeholder='Your Email ...'">
+                <input type="Submit" value="Submit">
+            </form>
+        </div>
+        <div class="clear"></div>
+    </section>
+    <!-- Services -->
+    <section id="services">
+        <div class="container">
+            <div class="section">
+                <a href="#">
+                    <img src="images/repair.png" alt="Repair">
+                    <h3 class="serv-title">Repairs</h3>
+                    <p class="serv-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </a>
+            </div>
+            <div class="section">
+                <a href="#">
+                    <img src="images/support.png" alt="Support">
+                    <h3 class="serv-title">Support</h3>
+                    <p class="serv-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </a>
+            </div>
+            <div class="section">
+                <a href="#">
+                    <img src="images/customers.png" alt="Customers">
+                    <h3 class="serv-title">Customers</h3>
+                    <p class="serv-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- About Us -->
+    <section id="about-us">
+        <div class="container">
+            <div class="us-img">
+                <img src="images/team.jpg" alt="Our Team">
+            </div>
+            <div class="us-text">
+                <h3 class="us-title">Expert <span class="js-us-title"></span> Team</h3>
+                <p class="us-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    <!-- Vehicles -->
+    <section id="vehicles">
+        <h3 class="vehicle">Our Latest Vehicles</h3>
+        <div class="vehicle-container">
+            <div><a href="#"><img src="images/tesla.jpg" alt="Tesla"></a></div>
+            <div><a href="#"><img src="images/bmw.jpg" alt="BMW"></a></div>
+            <div><a href="#"><img src="images/Porsche.jpg" alt="Porsche"></a></div>
+            <div><a href="#"><img src="images/tesla.jpg" alt="Tesla"></a></div>
+            <div><a href="#"><img src="images/bmw.jpg" alt="BMW"></a></div>
+            <div><a href="#"><img src="images/Porsche.jpg" alt="Porsche"></a></div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container">
+            Sweden, Malmö
+            <br>
+            Copyright &copy; 2020 Evlin Inc. All rights reserved
+        </div>
+    </section>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <script type="text/javascript">
+
+    //JS Codes for Carousel
+    $(document).ready(function() {
+        $('.vehicle-container').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: true,
+        });
+    });
+
+    //JS Codes for Typed Texts - Home Section
+    var typed = new Typed('.js-subtitle', {
+  strings: ["Customer Services", "Seller in the world", "Support in the world"],
+  typeSpeed: 30,
+  loop: true,
+  startDelay: 1000
+});
+
+
+    //JS Codes for Typed Texts - About Us Section
+       var typed = new Typed('.js-us-title', {
+  strings: ["Selling", "Repairing", "Supporting"],
+  typeSpeed: 30,
+  loop: true,
+  startDelay: 1000,
+  showCursor: false,
+});
+
+    </script>
+</body>
+
+</html>
